@@ -47,6 +47,7 @@ Header
 - The menu pages contain a button to return to the home page.
 
 Graphic Effects and Animations
+
 The effects accessible by clicking or hovering are visible on the model. They must use CSS animations or transitions, no JavaScript, or library.
 
 Buttons
