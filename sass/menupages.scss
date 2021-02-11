@@ -1,0 +1,226 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'button';
+
+body{
+    font-family: "Roboto";
+    margin:0px;
+}
+  
+a{
+    text-decoration:none;
+}
+
+.container {
+    max-width: 800px;
+    margin:auto;
+}
+
+.header{
+    &__arrow{
+        font-size: 1.7rem;
+        color: black;
+        left: 20px;
+        top: 32px;
+        display:flex;
+        position: absolute;
+        align-items:center;
+        justify-content:center;
+    }
+}
+
+.heroImg {
+    max-width: 100%;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu{
+    margin-top: -30px;
+    border-radius: 30px 30px 0 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+    position: relative;
+
+    &__header{
+        padding: 30px 50px 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        font-family: Shrikhand,"cursive";
+    }
+    &__like{
+        font-size:30px;
+    }
+}
+
+.submenu{
+    padding:20px; 
+
+    &__title{
+        padding-bottom: 3px;
+        font-weight: 100;
+        background: #f9f9f9;
+        text-transform: uppercase;
+    }
+    &__title:after {
+        content: '';
+        display: block;
+        position: relative;
+        width: 45px;
+        border: 2px solid $tertiary-color;
+        margin-top: 8px;
+    }
+
+    &__plat{
+        background-color:white;
+        padding: 20px 0px 20px 10px;
+        border-radius:20px;
+        margin: 15px 0;
+        box-shadow: 4px lightgrey;
+        max-width: 100%;
+        cursor:pointer;
+    }
+
+    &__name{
+        margin:0px 0px 5px 0px;
+        font-weight:700;
+        font-size: large;
+    }
+    &__description{
+        margin:0px;
+        font-weight: 100;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        width:900px;
+    }
+    &__price{
+        margin:0px;
+        font-weight: 900;  
+        margin-right: 20px;     
+        animation: boxReverse 400ms linear both;
+    } 
+
+    &__confirmation{
+        position:relative;
+        background-color: $tertiary-color;
+        width: 130px;
+        margin: -46px -10px -20px 0px;
+        border-radius: 0 20px 20px 0px;
+        animation: boxReverse 400ms linear both;
+    }
+
+    &__wrapIcon{
+        width: 30px;
+        height: 30px;
+        background: white;
+        margin-left: 25px;
+        border-radius: 100px;
+        margin-top: 30px;
+        transform: rotate(150deg);
+        transition-duration: .5s;
+    }
+    &__icon{
+        color: #99e2d0;
+        margin-left: 7px;
+        margin-top: 7px;  
+    }
+}
+
+.description_prix{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.buttonSection{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+
+@keyframes boxReverse {
+    from {
+        transform:translateX(0);
+    }
+    to{
+        transform: translateX(85px);
+    }
+}
+
+.submenu__plat:hover{
+    display: block;
+    overflow: hidden;
+    .submenu__confirmation{
+        display: inline-block;
+        animation: box 400ms linear;
+        .submenu__wrapIcon {
+            transform: rotate(0);
+        }
+    }
+}
+.submenu__plat:not(:hover){
+    overflow:hidden;
+}
+.submenu__plat:hover{
+    .submenu__price{
+        animation: box 400ms linear;
+    }
+}
+
+@keyframes delay{
+    0% {
+        opacity: 0;
+        margin-top: 5px;
+    }
+    15% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.delay-1{
+    animation: delay 1.2s;
+}
+.delay-2{
+    animation: delay 1.4s;
+}
+.delay-3{
+    animation: delay 1.6s;
+}
+.delay-4{
+    animation: delay 1.8s;
+}
+.delay-5{
+    animation: delay 2.0s;
+}
+.delay-6{
+    animation: delay 2.2s;
+}
+.delay-7{
+    animation: delay 2.4s;
+}
+.delay-8{
+    animation: delay 2.6s;
+}
+.delay-9{
+    animation: delay 2.8s;
+}

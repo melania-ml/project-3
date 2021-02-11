@@ -1,0 +1,28 @@
+.btn_cta {
+  cursor: pointer;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 5px 5px lightgray;
+          box-shadow: 0px 5px 5px lightgray;
+  color: white;
+  padding: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 30px;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+}
+
+.btn_cta:hover {
+  background-color: white;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu__like {
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+/*# sourceMappingURL=button.css.map */

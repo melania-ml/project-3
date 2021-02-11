@@ -1,0 +1,30 @@
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 30px 0px;
+  
+    &__title{
+      color: white;
+      font-family: "Shrikhand", "cursive";
+      margin: 3%;
+    }
+  
+    &__text{
+      padding:0px;
+      margin:3%;
+    }
+  
+    &__list {
+      list-style: none;
+      margin:10px 0;
+    }
+  
+    &__link{
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    &__icon{
+      width: 30px;
+    }
+  }
