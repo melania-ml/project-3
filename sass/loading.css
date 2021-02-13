@@ -14,6 +14,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: loading .05s;
+          animation: loading .05s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  z-index: 10000;
+}
+
+@-webkit-keyframes loading {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes loading {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
 }
 
 .progress {
@@ -30,12 +49,8 @@
   width: 100%;
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-animation: progress-bar 5000ms 150ms;
-          animation: progress-bar 5000ms 150ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation: progress-bar 3000ms;
+          animation: progress-bar 3000ms;
 }
 
 @-webkit-keyframes progress-bar {
@@ -60,18 +75,18 @@
   }
 }
 
-.loader {
+.load {
   -webkit-perspective: 700px;
           perspective: 700px;
   text-align: center;
 }
 
-.loader > span {
+.load > span {
   font-size: 30px;
   font-family: "Shrikhand",sans-serif;
   display: inline-block;
-  -webkit-animation: flip 2.6s infinite linear;
-          animation: flip 2.6s infinite linear;
+  -webkit-animation: flip 3s linear;
+          animation: flip 3s linear;
   -webkit-transform-origin: 0 70%;
           transform-origin: 0 70%;
   transform-style: preserve-3d;
@@ -100,43 +115,43 @@
   }
 }
 
-.loader > span:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+.load > span:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
-.loader > span:nth-child(3) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+.load > span:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
-.loader > span:nth-child(4) {
+.load > span:nth-child(4) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.load > span:nth-child(5) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-.loader > span:nth-child(5) {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
+.load > span:nth-child(6) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
-.loader > span:nth-child(6) {
-  -webkit-animation-delay: 2.0s;
-          animation-delay: 2.0s;
+.load > span:nth-child(7) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
-.loader > span:nth-child(7) {
+.load > span:nth-child(8) {
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+.load > span:nth-child(9) {
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
-}
-
-.loader > span:nth-child(8) {
-  -webkit-animation-delay: 2.8s;
-          animation-delay: 2.8s;
-}
-
-.loader > span:nth-child(9) {
-  -webkit-animation-delay: 3.2s;
-          animation-delay: 3.2s;
 }
 /*# sourceMappingURL=loading.css.map */
