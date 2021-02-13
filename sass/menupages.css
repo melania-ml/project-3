@@ -75,6 +75,14 @@ header h1 {
   -webkit-text-stroke-color: black;
 }
 
+.menu__like:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body {
   font-family: "Roboto";
   margin: 0px;
@@ -344,42 +352,42 @@ a {
 }
 
 .delay-2 {
-  -webkit-animation: delay 1.4s;
-          animation: delay 1.4s;
-}
-
-.delay-3 {
   -webkit-animation: delay 1.6s;
           animation: delay 1.6s;
 }
 
-.delay-4 {
-  -webkit-animation: delay 1.8s;
-          animation: delay 1.8s;
-}
-
-.delay-5 {
+.delay-3 {
   -webkit-animation: delay 2.0s;
           animation: delay 2.0s;
 }
 
-.delay-6 {
-  -webkit-animation: delay 2.2s;
-          animation: delay 2.2s;
-}
-
-.delay-7 {
+.delay-4 {
   -webkit-animation: delay 2.4s;
           animation: delay 2.4s;
 }
 
+.delay-5 {
+  -webkit-animation: delay 2.8s;
+          animation: delay 2.8s;
+}
+
+.delay-6 {
+  -webkit-animation: delay 3.2s;
+          animation: delay 3.2s;
+}
+
+.delay-7 {
+  -webkit-animation: delay 3.6s;
+          animation: delay 3.6s;
+}
+
 .delay-8 {
-  -webkit-animation: delay 2.6s;
-          animation: delay 2.6s;
+  -webkit-animation: delay 4.0s;
+          animation: delay 4.0s;
 }
 
 .delay-9 {
-  -webkit-animation: delay 2.8s;
-          animation: delay 2.8s;
+  -webkit-animation: delay 4.4s;
+          animation: delay 4.4s;
 }
 /*# sourceMappingURL=menupages.css.map */

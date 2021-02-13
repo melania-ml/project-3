@@ -25,4 +25,12 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
+
+.menu__like:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /*# sourceMappingURL=button.css.map */
