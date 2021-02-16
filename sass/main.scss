@@ -3,19 +3,21 @@
 @import 'header';
 @import 'footer';
 @import 'button';
+@import 'menupages';
 
 body{
   font-family: "Roboto";
   margin:0px;
+  max-width: 800px;
+  margin:auto;
+}
+
+p{
+  font-size: 17px;
 }
 
 a{
   text-decoration:none;
-}
-
-.container {
-  max-width: 800px;
-  margin:auto;
 }
 
 .adress {
@@ -51,7 +53,9 @@ a{
     margin:auto;
     margin-top:40px;
     text-align: center;
-    width:300px;
+    max-width:300px;
+    width:100%;
+    font-size: 17px;
   }
   & a {
     color:white;
@@ -69,7 +73,8 @@ a{
     display: flex;
     margin: auto;
     margin-top: 30px;
-    width: 450px;
+    max-width: 450px;
+    width:100ù;
     padding: 12px;
     border-radius: 24px;
     background: #f9f9f9;
@@ -107,6 +112,12 @@ a{
   }
 }
 
+@media (max-width: 500px){
+  .instructions__number{
+    margin-left:-10px;
+  }
+}
+
 .restaurants {
   margin-top: 80px;
   
@@ -127,7 +138,8 @@ a{
     row-gap: 20px;
   
     & img {
-      width: 530px;
+      max-width: 530px;
+      width:100%;
       height: 300px;
       object-fit: cover;
       border-radius: 15px 15px 0 0;
@@ -161,22 +173,16 @@ a{
   padding-bottom: 10px;
   padding-top: 10px;
 
-  &__like {
-    margin-right: 20px;
-    font-size: 1.7rem;
-  }
   &__title{
     line-height: 4px;
     margin-left: 10px;
   } 
   &__name{
-    font-size: 20px;
     font-weight: 600;
     color: black;
   }
   &__city{
     font-weight: 100;
-    font-size: 18px;
     color: black;
   }
 } 
