@@ -2,6 +2,7 @@
 @import 'header';
 @import 'footer';
 @import 'button';
+@import 'animation';
 
 .header-withArrow{
     position:relative;
@@ -129,16 +130,6 @@
     padding: 3rem 0;
 }
 
-
-@keyframes boxReverse {
-    from {
-        transform:translateX(0);
-    }
-    to{
-        transform: translateX(85px);
-    }
-}
-
 .submenu__plat:hover{
     display: block;
     overflow: hidden;
@@ -150,34 +141,14 @@
         }
     }
 }
+
 .submenu__plat:not(:hover){
     overflow:hidden;
 }
+
 .submenu__plat:hover{
     .submenu__price{
         animation: box 400ms linear;
-    }
-}
-
-@keyframes delay{
-    0% {
-        opacity: 0;
-        margin-top: 5px;
-    }
-    15% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    75% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
     }
 }
 

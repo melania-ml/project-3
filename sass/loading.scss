@@ -14,13 +14,6 @@
     z-index: 10000;
 }
 
-@keyframes loading{
-    100%{
-        opacity: 0;
-        z-index: -10;
-    }
-}
-
 .progress {
     border: 2px solid black;
     border-radius: 5px;
@@ -36,15 +29,6 @@
 	}
 }
 
-@keyframes progress-bar{
-    0% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(1);
-    }
-}
-
 .load{
 	perspective: 700px;
     text-align: center;
@@ -58,15 +42,6 @@
 	transform-origin:0 70%;
 	transform-style:preserve-3d;
 	-webkit-transform-style:preserve-3d;
-}
-
-@keyframes flip{
-	35%{
-		transform: rotateX(360deg);
-	}
-	100%{
-		transform: rotatex(360deg);
-	}
 }
 
 .load>span:nth-child(2){
